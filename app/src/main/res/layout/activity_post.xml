@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".PostActivity">
+
+    <include
+        android:id="@+id/updatePostToolbarId"
+        layout="@layout/app_bar_layout">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/updatePostToolbarId"
+
+        >
+
+        <ImageButton
+            android:id="@+id/selectbookImageId"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginEnd="7dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/select_image" />
+
+        <EditText
+            android:id="@+id/posttitleId"
+
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Book Title"
+            android:inputType="textMultiLine" />
+
+
+        <EditText
+            android:id="@+id/postcatId"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:hint="Category of book"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/postAuthorId"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:hint="Author of book"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/posttypeId"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:hint="landing Type"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/postcopiesId"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:hint="number of copy"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/postBpriceId"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:hint="Price of book"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/updatepostbuttonId"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="95dp"
+
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:text="Save" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
